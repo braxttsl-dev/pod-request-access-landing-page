@@ -43,7 +43,7 @@
     }
 
     body {
-        background: url("/assets/mobile/image-host.jpg") no-repeat;
+        background: url("../assets/mobile/image-host.jpg") no-repeat;
         background-color: $Dark-Blue;
         background-size: cover;
         background-blend-mode: overlay;
@@ -119,7 +119,7 @@
     }
 
     body {
-        background-image: url("/assets/tablet/image-host.jpg");
+        background-image: url("../assets/tablet/image-host.jpg");
         background-repeat: no-repeat;
         background-position: top right;
         background-color: $Dark-Blue;
@@ -203,7 +203,7 @@
 
 @media screen and (min-width:1024px){
     body {
-        background-image: url("/assets/desktop/image-host.jpg");
+        background-image: url("../assets/desktop/image-host.jpg");
         background-repeat: no-repeat;
         background-position: center right;
         background-color: $Dark-Blue;
