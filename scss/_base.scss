@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+// Colors
+$Teal: #54E6AF;
+$Dark-Blue: #121725;
+$White: #FFFFFF;
+$Dark-Blue-Gray: #2C344B;
+$Medium-Blue-Gray: #5A668A;
+$Light-Blue-Gray: #C2CBE5;
+$Active-Teal: #B3FFE2;
+
+// Fonts
+html{
+    font-family: 'Chivo', sans-serif;
+}

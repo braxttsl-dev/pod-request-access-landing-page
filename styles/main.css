@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Chivo", sans-serif;
+}
+
+.hero-logo {
+  margin: 3.75rem;
+}
+
+.hero h1 strong {
+  color: #54E6AF;
+  display: inline-block;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 1.625rem;
+  color: #FFFFFF;
+  line-height: 38px;
+  font-weight: 300;
+}
+
+.hero p {
+  color: #C2CBE5;
+  font-size: 0.9375rem;
+  line-height: 25px;
+}
+
+#errorMessage {
+  display: none;
+  color: #FB3E3E;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-left: 1.5625rem;
+  padding-top: 0.3125rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    display: none;
+  }
+  body {
+    background: url("/assets/mobile/image-host.jpg") no-repeat;
+    background-color: #121725;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+  }
+  .hero-mobile {
+    text-align: center;
+    max-width: 23.5rem;
+    margin: 0 auto;
+  }
+  .hero-mobile-logo {
+    margin: 3.75rem;
+  }
+  .hero-mobile h1 strong {
+    color: #54E6AF;
+    display: inline-block;
+  }
+  .hero-mobile h1 {
+    text-transform: uppercase;
+    font-size: 1.625rem;
+    color: #FFFFFF;
+    line-height: 38px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  .hero-mobile p {
+    color: #C2CBE5;
+    margin-inline: 1.5625rem;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    margin-bottom: 1.25rem;
+  }
+  .hero-mobile-logos {
+    display: flex;
+    gap: 0.625rem;
+    padding-inline: 1.375rem;
+    margin-bottom: 3.125rem;
+    justify-content: center;
+  }
+  .hero-mobile-logos img {
+    height: 1.0625rem;
+  }
+  .hero-mobile input,
+.hero-mobile button {
+    display: block;
+    width: 20.4375rem;
+    height: 2.875rem;
+    border-radius: 28px;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+  .hero-mobile button {
+    background-color: #54E6AF;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-mobile {
+    display: none;
+  }
+  body {
+    background-image: url("/assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #121725;
+  }
+  .hero-logo {
+    margin: 3.75rem 2.5rem;
+  }
+  .hero-content {
+    background-color: #121725;
+    width: 39.6875rem;
+    margin-top: 5rem;
+    padding: 5.625rem 1.1875rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 1.5625rem;
+  }
+  .hero p {
+    font-size: 1.125rem;
+    line-height: 28px;
+    margin-right: 10rem;
+    margin-bottom: 1.5625rem;
+  }
+  .hero-input {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .hero-input input {
+    width: 26.6875rem;
+    height: 3.5rem;
+    border-radius: 28px;
+    border: none;
+    background-color: #2C344B;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-left: 1.25rem;
+  }
+  .hero-input button {
+    background: #54E6AF;
+    border: none;
+    width: 10.125rem;
+    height: 2.875rem;
+    border-radius: 28px;
+    position: absolute;
+    left: 260px;
+    top: 5px;
+    font-weight: 700;
+  }
+  .hero-logos {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .spotify,
+.apple {
+    height: 1.8125rem;
+  }
+  .google {
+    height: 1.125rem;
+  }
+  .pocket {
+    height: 1.625rem;
+  }
+  .dots {
+    position: absolute;
+    bottom: 0;
+    left: 1.875rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("/assets/desktop/image-host.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #121725;
+    height: 100vh;
+  }
+  .hero h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+  .hero-logo {
+    margin: 6.25rem 0 0 8.125rem;
+  }
+  .hero-content {
+    width: 45.1875rem;
+    margin: 6.25rem 0 8.125rem 8.125rem;
+  }
+  .dots {
+    bottom: 80px;
+    left: auto;
+    right: 0;
+  }
+}
+.hero-mobile input {
+  background-color: #2C344B;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-left: 1.875rem;
+}
+
+.hero-mobile .hero-mobile button {
+  background-color: #54E6AF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: #B3FFE2;
+}/*# sourceMappingURL=main.css.map */

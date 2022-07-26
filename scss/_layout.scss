@@ -1,0 +1,234 @@
+.hero-logo {
+    margin: pxToRem(60px);
+}
+
+.hero h1 strong {
+    color: $Teal;
+    display: inline-block;
+
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    font-size: pxToRem(26px);
+    color: $White;
+    line-height: 38px;
+    font-weight: 300;
+
+}
+
+.hero p {
+    color: $Light-Blue-Gray;
+    font-size: pxToRem(15px);
+    line-height: 25px;
+
+}
+
+#errorMessage{
+    display: none;
+    color: #FB3E3E;
+    font-size: pxToRem(12px);
+    font-weight: 700;
+    padding-left: pxToRem(25px);
+    padding-top: pxToRem(5px);
+    margin: 0;
+    }
+    
+
+
+
+@media screen and (max-width: 767px) {
+    .hero {
+        display: none;
+    }
+
+    body {
+        background: url("/assets/mobile/image-host.jpg") no-repeat;
+        background-color: $Dark-Blue;
+        background-size: cover;
+        background-blend-mode: overlay;
+        height: 100vh;
+    }
+
+    .hero-mobile {
+        text-align: center;
+        max-width: pxToRem(376px);
+        margin: 0 auto;
+    }
+
+
+    .hero-mobile-logo {
+        margin: pxToRem(60px);
+    }
+
+    .hero-mobile h1 strong {
+        color: $Teal;
+        display: inline-block;
+
+    }
+
+    .hero-mobile h1 {
+        text-transform: uppercase;
+        font-size: pxToRem(26px);
+        color: $White;
+        line-height: 38px;
+        font-weight: 300;
+        margin-bottom: pxToRem(16px);
+    }
+
+    .hero-mobile p {
+        color: $Light-Blue-Gray;
+        margin-inline: pxToRem(25px);
+        font-size: pxToRem(15px);
+        line-height: 25px;
+        margin-bottom: pxToRem(20px);
+    }
+
+    .hero-mobile-logos {
+        display: flex;
+        gap: pxToRem(10px);
+        padding-inline: pxToRem(22px);
+        margin-bottom: pxToRem(50px);
+        justify-content: center;
+    }
+
+    .hero-mobile-logos img {
+        height: pxToRem(17px);
+    }
+
+    .hero-mobile input,
+    .hero-mobile button {
+        display: block;
+        width: pxToRem(327px);
+        height: pxToRem(46px);
+        border-radius: 28px;
+        border: none;
+        margin: 0 auto;
+        margin-bottom: pxToRem(20px);
+    }
+
+    .hero-mobile button{
+        background-color: $Teal;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-mobile {
+        display: none;
+    }
+
+    body {
+        background-image: url("/assets/tablet/image-host.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: $Dark-Blue;
+    }
+
+    .hero-logo {
+        margin: pxToRem(60px) pxToRem(40px);
+    }
+
+    .hero-content {
+        background-color: $Dark-Blue;
+        width: pxToRem(635px);
+        margin-top: pxToRem(80px);
+        padding: pxToRem(90px) pxToRem(19px);
+    }
+
+    .hero h1 {
+        font-size: pxToRem(48px);
+        line-height: 56px;
+        margin-bottom: pxToRem(25px);
+    }
+
+    .hero p {
+        font-size: pxToRem(18px);
+        line-height: 28px;
+        margin-right: pxToRem(160px);
+        margin-bottom: pxToRem(25px);
+    }
+
+   
+    .hero-input{
+        position: relative;
+        margin-bottom: pxToRem(80px);
+    }
+    .hero-input input{
+        width: pxToRem(427px);
+        height: pxToRem(56px);
+        border-radius: 28px;
+        border: none;
+        background-color: $Dark-Blue-Gray;
+        color: $White;
+        font-weight: 700;
+        padding-left: pxToRem(20px);
+    }
+
+    .hero-input button {
+        background: $Teal;
+        border: none;
+        width: pxToRem(162px);
+        height: pxToRem(46px);
+        border-radius: 28px;
+        position: absolute;
+        left: 260px;
+        top: 5px;
+        font-weight: 700;
+    }
+
+    
+
+    .hero-logos {
+        display: flex;
+        align-items: center;
+        gap: pxToRem(40px);
+        
+    }
+
+    .spotify,
+    .apple {height: pxToRem(29px);}
+    .google {height: pxToRem(18px);}
+    .pocket {height: pxToRem(26px);}
+
+    .dots{
+        position: absolute;
+        bottom: 0;
+        left: pxToRem(30px);
+    }
+
+
+
+}
+
+@media screen and (min-width:1024px){
+    body {
+        background-image: url("/assets/desktop/image-host.jpg");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-color: $Dark-Blue;
+        height: 100vh;
+    }
+
+    .hero h1{
+        font-size: pxToRem(52px);
+        line-height: pxToRem(62px);
+    }
+
+    .hero-logo{
+        margin: pxToRem(100px) 0 0 pxToRem(130px);
+
+    }
+
+    .hero-content{
+        width: pxToRem(723px);
+        margin: pxToRem(100px) 0 pxToRem(130px) pxToRem(130px) ;
+    }
+
+    .dots{
+        bottom: 80px;
+        left: auto;
+        right: 0;
+    }
+
+}
